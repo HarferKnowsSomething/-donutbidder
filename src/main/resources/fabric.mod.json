@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "donutbidder",
+  "version": "${version}",
+  "name": "DonutBidder",
+  "description": "Client-side auction tracker for chat auctions. Reads real payment messages from the server, tracks the highest bidder, runs a timer with anti-snipe, and builds a refund list for losing bidders.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.donut.bidder.DonutBidderClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
